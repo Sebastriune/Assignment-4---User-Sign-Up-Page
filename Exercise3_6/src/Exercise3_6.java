@@ -35,7 +35,7 @@ public class Exercise3_6 {
                         JOptionPane.INFORMATION_MESSAGE, null, choices, choices[3]);
                 }
             int answer = JOptionPane.showConfirmDialog(null, "End program?", 
-            	"Click Yes or No:", JOptionPane.YES_NO_OPTION);
+            	"Click a Button", JOptionPane.YES_NO_OPTION);
             if (answer == JOptionPane.YES_OPTION)
                 JOptionPane.showMessageDialog(null, "Good Bye!");
             else
