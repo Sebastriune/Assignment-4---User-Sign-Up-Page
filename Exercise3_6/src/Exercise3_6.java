@@ -17,20 +17,23 @@ public class Exercise3_6 {
             	switch (input)
         		{
          		case December: case January: case February:
-        			System.out.println("Do you want to build a snow man?");
+        			JOptionPane.showMessageDialog(null, "Do you want to build a snow man?");
         			break;
         		case March: case April: case May:
-        			System.out.println("Happy Spring days!");
+        			JOptionPane.showMessageDialog(null, "Happy Spring days!");
         			break;
         		case June: case July: case August:
-        			System.out.println("It's a summer time.");
+        			JOptionPane.showMessageDialog(null, "It's a summer time.");
         			break;
         		case September: case October: case November:
-        			System.out.println("Welcome to the foilage season!");
+        			JOptionPane.showMessageDialog(null, "Welcome to the foilage season!");
         			break;
+        		default:
+        			JOptionPane.showMessageDialog(null, "Wrong Choice!");
                 }
                 input = (Month) JOptionPane.showInputDialog (null,"Select your month.", "Month",
                         JOptionPane.INFORMATION_MESSAGE, null, choices, choices[3]);
                 }
+            JOptionPane.showMessageDialog(null, "Good Bye!");
             }
 }
