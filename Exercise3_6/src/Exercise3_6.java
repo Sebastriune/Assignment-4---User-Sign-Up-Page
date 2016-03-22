@@ -34,6 +34,11 @@ public class Exercise3_6 {
                 input = (Month) JOptionPane.showInputDialog (null,"Select your month.", "Month",
                         JOptionPane.INFORMATION_MESSAGE, null, choices, choices[3]);
                 }
-            JOptionPane.showMessageDialog(null, "Good Bye!");
+            int answer = JOptionPane.showConfirmDialog(null, "End program?", 
+            	"Click Yes or No:", JOptionPane.YES_NO_OPTION);
+            if (answer == JOptionPane.YES_OPTION)
+                JOptionPane.showMessageDialog(null, "Good Bye!");
+            else
+            	JOptionPane.showMessageDialog(null, "One more time");
             }
 }
