@@ -51,6 +51,7 @@ public class Person {
 	}
 	
 	//---------------------------------------------------------
+	@Override
 	public String toString() {
 		return "Name: " + this.name + ", Age: " + this.age;
 	}
