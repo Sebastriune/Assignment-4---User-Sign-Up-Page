@@ -56,7 +56,7 @@ public class CalculatorGUI implements ActionListener {
 		// System.out.println(textField1.getText() + textField2.getText());
 		double num1 = Double.parseDouble(textField1.getText());
 		double num2 = Double.parseDouble(textField2.getText());
-		double product = num1 + num2;
-		output.setText(String.valueOf(product));
+		double sum = num1 + num2;
+		output.setText(String.valueOf(sum));
 	}
 }
